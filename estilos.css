@@ -1,0 +1,22 @@
+.project img {
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.project {
+  margin: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+iframe {
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
