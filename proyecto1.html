@@ -9,7 +9,6 @@
 </head>
 <body>
     
-  
     <div class="container mt-5">
         <h1>Detalles del Proyecto</h1>
         
@@ -18,64 +17,46 @@
 
         <!-- Imágenes del proceso -->
         <h2>Proceso</h2>
-        <img src="ConsultaSQL1.jpg" alt="Imagen 1" class="img-fluid">
-         <h4>Consulta SQL para realizar la extracción, transformación y carga (ETL)</h4>
-        <br> 
         
-        <img src="ConexionPBI.jpg" alt="Imagen 2" class="img-fluid">
-         <h4>Se realiza la conexión en Power BI a través de la consulta</h4>
+        <!-- Imagen 1 (y sus imágenes de proceso) -->
+        <img src="ConsultaSQL1.jpg" alt="Imagen 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('ConsultaSQL1.jpg')">
+        <h4>Consulta SQL para realizar la extracción, transformación y carga (ETL)</h4>
         <br>
         
-        <img src="CargaDatosPBI.jpg" alt="Imagen 3" class="img-fluid">
+        <img src="ConexionPBI.jpg" alt="Imagen 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('ConexionPBI.jpg')">
+        <h4>Se realiza la conexión en Power BI a través de la consulta</h4>
+        <br>
+        
+        <img src="CargaDatosPBI.jpg" alt="Imagen 3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('CargaDatosPBI.jpg')">
         <h4>Muestra de los datos cargados para trabajar en el modelo semántico</h4>
         <br>
 
-        
-        <img src="ConsultaSQL2.jpg" alt="Imagen 4" class="img-fluid">
+        <img src="ConsultaSQL2.jpg" alt="Imagen 4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('ConsultaSQL2.jpg')">
         <br>
-        <img src="ConexionPBI2.jpg" alt="Imagen 5" class="img-fluid">
+        <img src="ConexionPBI2.jpg" alt="Imagen 5" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('ConexionPBI2.jpg')">
         <br>
-        <img src="CargaDatosPBI2.jpg" alt="Imagen 6" class="img-fluid">
+        <img src="CargaDatosPBI2.jpg" alt="Imagen 6" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImageSrc('CargaDatosPBI2.jpg')">
         <br>
-       
+
         <!-- Descripción detallada -->
         <h2>Extracción y Análisis de Datos con SQL</h2>
-    <p>Para este ejercicio, se trabajó con una base de datos pública comúnmente utilizada como referencia en análisis de datos y gestión empresarial. Se empleó <strong>SQL Server Management Studio (SSMS)</strong> como herramienta para ejecutar las consultas y explorar la información, mientras que para la visualización se utilizó <strong>Power BI</strong>.</p>
+        <p>Para este ejercicio, se trabajó con una base de datos pública comúnmente utilizada como referencia en análisis de datos y gestión empresarial. Se empleó <strong>SQL Server Management Studio (SSMS)</strong> como herramienta para ejecutar las consultas y explorar la información, mientras que para la visualización se utilizó <strong>Power BI</strong>.</p>
 
+        <h3>Proceso seguido</h3>
+        <h4>1. Exploración de la Base de Datos</h4>
+        <p>El primer paso fue conocer la estructura de la base de datos...</p>
 
-    <h3>Proceso seguido</h3>
+        <h4>2. Extracción de Información de Empleados</h4>
+        <p>Se diseñó una consulta SQL para extraer datos clave del personal...</p>
 
-    <h4>1. Exploración de la Base de Datos</h4>
-    <p>El primer paso fue conocer la estructura de la base de datos, identificando las tablas y sus relaciones. Se analizaron tablas relacionadas con <strong>empleados, departamentos y turnos laborales</strong>, asegurando que la información obtenida fuera útil y estuviera bien organizada.</p>
+        <h4>3. Consulta de Departamentos y Turnos</h4>
+        <p>Además de los datos de los empleados, se extrajo información estructurada...</p>
 
-    <h4>2. Extracción de Información de Empleados</h4>
-    <p>Se diseñó una consulta SQL para extraer datos clave del personal, incluyendo:</p>
-    <ul>
-        <li><strong>Información personal:</strong> nombre, estado civil, género y fecha de nacimiento.</li>
-        <li><strong>Datos laborales:</strong> fecha de ingreso, antigüedad, periodo de pago y días disponibles para vacaciones.</li>
-        <li><strong>Cálculos dinámicos:</strong> edad de los empleados mediante <code>DATEDIFF()</code>.</li>
-        <li><strong>Unión de tablas:</strong> incorporación de detalles del departamento y turno asignado.</li>
-        <li><strong>Transformación de datos:</strong> uso de <code>CASE</code> para convertir códigos numéricos en información legible.</li>
-    </ul>
+        <h4>4. Validación y Visualización de Resultados</h4>
+        <p>Se revisaron los resultados para garantizar que...</p>
 
-    <h4>3. Consulta de Departamentos y Turnos</h4>
-    <p>Además de los datos de los empleados, se extrajo información estructurada sobre:</p>
-    <ul>
-        <li><strong>Departamentos:</strong> mostrando la organización interna de la empresa.</li>
-        <li><strong>Turnos de trabajo:</strong> horarios de inicio y fin de cada jornada.</li>
-    </ul>
-
-    <h4>4. Validación y Visualización de Resultados</h4>
-    <p>Se revisaron los resultados para garantizar que:</p>
-    <ul>
-        <li>La información se presentara de forma clara y comprensible.</li>
-        <li>Los cálculos fueran correctos.</li>
-        <li>Los datos extraídos fueran coherentes con la estructura de la base de datos.</li>
-    </ul>
-
-    <h2>Conclusión</h2>
-    <p>Este proceso permitió extraer y analizar información clave del personal utilizando SQL. Se aplicaron técnicas de <strong>unión de tablas, transformación de datos y cálculos dinámicos</strong>, facilitando una visión clara de la estructura organizacional y la gestión del talento. Este tipo de análisis es fundamental para optimizar la toma de decisiones en cualquier empresa.</p>
-</div>
+        <h2>Conclusión</h2>
+        <p>Este proceso permitió extraer y analizar información clave del personal...</p>
 
         <!-- Enlace al repositorio -->
         <h2>Repositorio</h2>
@@ -83,5 +64,30 @@
 
         <a href="index.html" class="btn btn-dark">Volver al Portafolio</a> 
     </div>
+
+    <!-- Modal para ver imágenes más grandes -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar la imagen en el modal -->
+    <script>
+        function setImageSrc(imageSrc) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+        }
+    </script>
+
 </body>
 </html>
