@@ -8,33 +8,39 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Juan Rincón</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+    <!-- Cabecera con navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Juan Rincón</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Sobre Mí -->
     <section id="about" class="container mt-5 text-center">
         <h2>Sobre Mí</h2>
         <p>Especialista en People Analytics y BI con experiencia en gestión del talento y análisis de datos.</p>
     </section>
 
+    <!-- Sección Proyectos -->
     <section id="projects" class="container mt-5">
         <h2 class="text-center">Proyectos Destacados</h2>
         <div class="row mt-4">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="CapturaPantallahhrr.jpg" class="card-img-top" alt="Proyecto 1">
+                    <img src="CapturaPantallahhrr.jpg" class="card-img-top img-fluid" alt="Proyecto 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto 1</h5>
                         <p class="card-text">Descripción breve del proyecto.</p>
@@ -44,7 +50,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="extraerboletas.PNG" class="card-img-top" alt="Proyecto 2">
+                    <img src="extraerboletas.PNG" class="card-img-top img-fluid" alt="Proyecto 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto 2</h5>
                         <p class="card-text">Descripción breve del proyecto.</p>
@@ -54,7 +60,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="incidencias.PNG" class="card-img-top" alt="Proyecto 3">
+                    <img src="incidencias.PNG" class="card-img-top img-fluid" alt="Proyecto 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto 3</h5>
                         <p class="card-text">Descripción breve del proyecto.</p>
@@ -62,39 +68,10 @@
                     </div>
                 </div>
             </div>
-        <div class="col-md-4">
-                <div class="card">
-                    <img src="CapturaPantallahhrr.jpg" class="card-img-top" alt="Proyecto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 1</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyecto1.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="extraerboletas.PNG" class="card-img-top" alt="Proyecto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 2</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyecto2.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="incidencias.PNG" class="card-img-top" alt="Proyecto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 3</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyecto3.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-          </div>  
+        </div>
     </section>
 
+    <!-- Sección Contacto -->
     <section id="contact" class="container mt-5 text-center">
         <h2>Contacto</h2>
         <p>Puedes encontrarme en:</p>
@@ -102,7 +79,29 @@
         <a href="https://github.com/juanmrd" class="btn btn-dark">GitHub</a>
     </section>
 
+    <!-- Modal de imagen -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Imagen ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para abrir el modal con la imagen
+        function openModal(img) {
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = img.src;  // Asigna la imagen al modal
+        }
+    </script>
 </body>
 </html>
 
