@@ -15,11 +15,6 @@ html, body {
 /* Estilos para el header */
 header {
     background-color: #343a40 !important;  /* Fondo oscuro */
-    /*margin: 0;  /* Elimina margen */
-    /*padding: 0;  /* Elimina relleno */
-    /*width: 100%;
-    /*height: auto;
-    box-shadow: none !important;  /* Elimina cualquier sombra */
 }
 
 /* Estilos de la barra de navegación */
@@ -52,10 +47,10 @@ header {
 .container {
     max-width: 1000px; /* Cambié el tamaño del contenedor */
     margin: auto;
-    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: transparent;  /* Cambio el fondo blanco a transparente */
 }
 
 /* Estilos de las imágenes */
