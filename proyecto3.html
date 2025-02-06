@@ -20,8 +20,62 @@
         <img src="imagen_proceso2.jpg" alt="Imagen 2" class="img-fluid">
 
         <!-- Descripción detallada -->
-        <h2>Descripción</h2>
-        <p>Aquí puedes incluir la descripción detallada del proyecto, como los objetivos, los desafíos que enfrentaste y cómo los resolviste.</p>
+        <h2>Análisis y Procesamiento de Datos de Incidencias con Python y Pandas</h2>
+
+<p>Este script automatiza la limpieza, análisis y organización de datos relacionados con <strong>incidencias en salas de clases</strong>, utilizando <strong>Python</strong> y la biblioteca <strong>Pandas</strong>. Está diseñado para procesar archivos <strong>CSV</strong> y generar reportes en <strong>Excel</strong>, lo que facilita la gestión y el seguimiento de eventos en distintos espacios educativos.</p>
+
+<h2>Tecnologías Utilizadas</h2>
+<ul>
+  <li><strong>Lenguaje:</strong> Python</li>
+  <li><strong>Bibliotecas:</strong>
+    <ul>
+      <li><code>pandas</code>: Manipulación y análisis de datos en estructuras tabulares.</li>
+      <li><code>numpy</code>: Operaciones numéricas y manejo de valores nulos.</li>
+      <li><code>google.colab.drive</code>: Trabajo con archivos almacenados en Google Drive.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Flujo del Script</h2>
+
+<h3>1. Carga del Archivo de Datos</h3>
+<p>Se lee un archivo CSV (<code>incidencias.csv</code>) que contiene información sobre horarios, salas y registros de asistencia.</p>
+
+<h3>2. Procesamiento de Datos</h3>
+<ul>
+  <li>Eliminación de columnas innecesarias para optimizar la base de datos.</li>
+  <li>Identificación de valores vacíos en las columnas clave (<strong>Hrs. Log.</strong> y <strong>Hora salida</strong>).</li>
+  <li>Categorización de registros en tres grupos:
+    <ul>
+      <li><strong>"HORARIO INTERMEDIO"</strong>: Datos incompletos.</li>
+      <li><strong>"Campo Clínico"</strong>: Salas específicas del área de salud.</li>
+      <li><strong>"Online"</strong>: Registros correspondientes a clases virtuales.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>3. Organización y Ordenamiento</h3>
+<p>Se ordenan los datos por fecha y, dentro de cada día, por código de ramo y sección.</p>
+
+<h3>4. Visualización y Estilización</h3>
+<p>Se aplican estilos de color para resaltar categorías específicas en la tabla:</p>
+<ul>
+  <li><span style="color:turquoise;"><strong>Turquesa</strong></span> para salas de informática.</li>
+  <li><span style="color:yellow;"><strong>Amarillo</strong></span> para espacios de campo clínico.</li>
+</ul>
+
+<h3>5. Generación de Reportes Automatizados</h3>
+<p>Se exportan los datos procesados en archivos <strong>Excel</strong>, organizando cada día en un archivo independiente.</p>
+
+<h2>¿Por qué es útil?</h2>
+<ul>
+  <li>Facilita la identificación de incidencias en el uso de salas.</li>
+  <li>Optimiza la revisión de registros de asistencia y horarios.</li>
+  <li>Automatiza la generación de reportes en Excel, ahorrando tiempo y reduciendo errores manuales.</li>
+  <li>Mejora la visualización de datos mediante estilos condicionales.</li>
+</ul>
+
+<p>Este script es una muestra práctica de cómo <strong>Python y Pandas</strong> pueden mejorar la gestión y análisis de datos en entornos educativos o administrativos. 🚀</p>
 
         <!-- Enlace al repositorio -->
         <h2>Repositorio</h2>
