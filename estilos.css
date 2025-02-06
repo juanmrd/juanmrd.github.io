@@ -3,23 +3,29 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;  /* Fuente por defecto */
+    overflow-x: hidden;  /* Evitar desplazamiento horizontal */
+    box-sizing: border-box;  /* Asegurarnos de que todo se ajuste dentro del contenedor */
+}
+
+/* Asegurarnos de que los bordes no afecten el tamaño de los elementos */
+* {
+    box-sizing: inherit;  /* Todo elemento dentro hereda el box-sizing de 'body' */
 }
 
 /* Estilos para el header */
 header {
     background-color: #343a40 !important;  /* Fondo oscuro */
-    margin: 0 !important;  /* Elimina el margen */
-    padding: 0 !important;  /* Elimina el relleno */
+    margin: 0;  /* Elimina margen */
+    padding: 0;  /* Elimina relleno */
     width: 100%;
+    height: auto;
     box-shadow: none !important;  /* Elimina cualquier sombra */
 }
 
 /* Estilos de la barra de navegación */
 .navbar {
-    margin: 0 !important;
-    padding: 10px 0 !important;  /* Relleno para la navbar */
+    margin: 0 !important;  /* Elimina margen */
+    padding: 0 !important;  /* Elimina relleno */
     background-color: #343a40 !important;  /* Fondo oscuro */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
     width: 100%;
@@ -42,26 +48,9 @@ header {
     border-color: rgba(255, 255, 255, 0.5);  /* Borde gris claro */
 }
 
-/* Enlace de la navbar */
-.navbar-nav {
-    width: 100%;
-}
-
-/* Estilos de los enlaces en la navbar */
-.navbar-nav .nav-link {
-    color: white !important;  /* Enlaces de color blanco */
-}
-
-/* Ajustes para los h1 y h2 */
-h1, h2 {
-    color: #343a40;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilos del contenedor principal */
+/* Estilo para el contenedor principal */
 .container {
-    max-width: 900px;
+    max-width: 1000px; /* Cambié el tamaño del contenedor */
     margin: auto;
     background: white;
     padding: 20px;
@@ -75,34 +64,23 @@ img {
     max-width: 100%;
     height: auto;
     margin: 10px auto;
+    cursor: pointer;  /* Aparece como un puntero para las imágenes */
 }
 
-/* Estilos para los botones */
-.btn-dark {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-/* Estilos del modal para imágenes */
+/* Modal de imagen */
 .modal {
-    display: none;  /* Oculto por defecto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);  /* Fondo oscuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    position: relative;
     background-color: white;
     padding: 20px;
     max-width: 90%;
