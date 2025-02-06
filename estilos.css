@@ -41,6 +41,9 @@ header {
     color: white !important;
     text-align: center;  /* Centra el texto */
     width: 100%;  /* Asegura que el ancho ocupe todo el espacio disponible */
+    letter-spacing: 2px;
+    line-height: 1.5;  /* Ajusta el espacio entre las líneas (si hay más de una línea de texto) */
+}
 
 }
 
