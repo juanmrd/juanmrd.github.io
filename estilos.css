@@ -1,0 +1,125 @@
+/* Reseteo de márgenes y padding para todo el documento */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;  /* Fuente por defecto */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #343a40 !important;  /* Fondo oscuro */
+    margin: 0 !important;  /* Elimina el margen */
+    padding: 0 !important;  /* Elimina el relleno */
+    width: 100%;
+    box-shadow: none !important;  /* Elimina cualquier sombra */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    margin: 0 !important;
+    padding: 10px 0 !important;  /* Relleno para la navbar */
+    background-color: #343a40 !important;  /* Fondo oscuro */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    width: 100%;
+}
+
+/* Eliminar márgenes y rellenos dentro de la navbar */
+.navbar * {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Estilos para el texto de la navbar */
+.navbar-brand {
+    color: white !important;
+    text-align: center;
+}
+
+/* Estilo del navbar-toggler (botón de menú en dispositivos pequeños) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);  /* Borde gris claro */
+}
+
+/* Enlace de la navbar */
+.navbar-nav {
+    width: 100%;
+}
+
+/* Estilos de los enlaces en la navbar */
+.navbar-nav .nav-link {
+    color: white !important;  /* Enlaces de color blanco */
+}
+
+/* Ajustes para los h1 y h2 */
+h1, h2 {
+    color: #343a40;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* Estilos para los botones */
+.btn-dark {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Estilos del modal para imágenes */
+.modal {
+    display: none;  /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+}
