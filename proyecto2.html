@@ -19,8 +19,56 @@
         <img src="datosventas.JPG" alt="Imagen 1" class="img-fluid">
         
         <!-- Descripción detallada -->
-        <h2>Descripción</h2>
-        <p>Aquí puedes incluir la descripción detallada del proyecto, como los objetivos, los desafíos que enfrentaste y cómo los resolviste.</p>
+        <h2>Extracción y Consolidación de Datos desde PDFs con Python</h2>
+
+<p>Este script automatiza la extracción de información desde <strong>boletas de honorarios en formato PDF</strong>, consolidando los datos en un archivo <strong>Excel y CSV</strong>. Utiliza <strong>Python</strong> para leer los documentos, identificar los campos clave y estructurar la información en un formato tabular.</p>
+
+<h2>Tecnologías Utilizadas</h2>
+<ul>
+  <li><strong>Lenguaje:</strong> Python</li>
+  <li><strong>Bibliotecas:</strong>
+    <ul>
+      <li><code>os</code>: Manejo de archivos y carpetas.</li>
+      <li><code>pandas</code>: Organización y exportación de datos en Excel y CSV.</li>
+      <li><code>PyPDF2</code>: Lectura y extracción de texto desde documentos PDF.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Flujo del Script</h2>
+
+<h3>1. Recorrido de la Carpeta</h3>
+<p>Se explora una carpeta en busca de archivos PDF.</p>
+
+<h3>2. Extracción de Información Clave</h3>
+<p>Se extraen datos de cada boleta utilizando palabras clave, incluyendo:</p>
+<ul>
+  <li><strong>Nombre del contribuyente</strong></li>
+  <li><strong>Institución o receptor</strong></li>
+  <li><strong>RUT del receptor y contribuyente</strong></li>
+  <li><strong>Número de boleta</strong></li>
+  <li><strong>Fecha de emisión</strong></li>
+  <li><strong>Detalle de atención profesional</strong></li>
+  <li><strong>Monto total de honorarios</strong></li>
+  <li><strong>Impuesto retenido</strong></li>
+  <li><strong>Total final después de impuestos</strong></li>
+</ul>
+
+<h3>3. Consolidación de Datos</h3>
+<p>Se almacena la información de todas las boletas en un <strong>DataFrame de Pandas</strong>.</p>
+
+<h3>4. Exportación a Formatos Estandarizados</h3>
+<p>Se generan reportes en <strong>Excel (<code>.xlsx</code>) y CSV (<code>.csv</code>)</strong>, permitiendo su análisis en herramientas como <strong>Microsoft Excel o Google Sheets</strong>.</p>
+
+<h2>¿Por qué es útil?</h2>
+<ul>
+  <li>Permite <strong>automatizar la gestión de documentos</strong> financieros, reduciendo el trabajo manual.</li>
+  <li>Estandariza la información, facilitando la auditoría y el análisis de datos.</li>
+  <li>Ahorra tiempo y minimiza errores en la consolidación de boletas de honorarios.</li>
+</ul>
+
+<p>Este script demuestra cómo <strong>Python y Pandas</strong> pueden ser utilizados para <strong>extraer, transformar y estructurar datos desde archivos PDF</strong>, un proceso clave en la digitalización y automatización de la gestión documental. 🚀</p>
+
 
         <!-- Enlace al repositorio -->
         <h2>Repositorio</h2>
