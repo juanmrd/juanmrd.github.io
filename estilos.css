@@ -1,3 +1,4 @@
+/* Reseteo de márgenes y padding para todo el documento */
 html, body {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Estilos de la barra de navegación */
 .navbar {
     margin: 0 !important;
     padding: 10px 0 !important;
@@ -24,6 +26,8 @@ html, body {
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
 }
+
+/* Estilo para el header y la navbar */
 header, .navbar {
     background-color: #343a40 !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -49,12 +53,14 @@ header, .navbar {
     box-shadow: none;
 }
 
+/* Estilos para los encabezados */
 h1, h2 {
     color: #343a40;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px; /* Aumenta el espacio superior de los encabezados */
 }
 
+/* Contenedor principal */
 .container {
     max-width: 900px;
     margin: auto;
@@ -62,8 +68,10 @@ h1, h2 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Espacio adicional en la parte superior del contenedor */
 }
 
+/* Imágenes dentro del contenedor */
 img {
     display: block;
     max-width: 100%;
@@ -71,6 +79,7 @@ img {
     margin: 10px auto;
 }
 
+/* Estilo para los iframes */
 iframe {
     width: 100%;
     max-width: 800px;
@@ -79,6 +88,7 @@ iframe {
     border-radius: 5px;
 }
 
+/* Estilos para el botón */
 .btn-dark {
     display: block;
     width: 200px;
@@ -87,5 +97,28 @@ iframe {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
+}
+
+/* Efecto hover para el botón */
+.btn-dark:hover {
+    background-color: #23272b; /* Color más oscuro al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+/* Espacio entre párrafos */
+p {
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .btn-dark {
+        width: 100%; /* Hace que el botón ocupe todo el ancho en pantallas pequeñas */
+    }
 }
 
