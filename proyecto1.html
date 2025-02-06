@@ -39,12 +39,47 @@
         <br>
 
         <!-- Descripción detallada -->
-        <h2>Análisis y Procesamiento de Datos de Incidencias con Python y Pandas</h2>
+        <h3>Extracción y Análisis de Datos con SQL</h3>
+
+    <p>Para este ejercicio, se trabajó con una base de datos pública utilizada comúnmente como referencia en análisis de datos y gestión empresarial. Se empleó <strong>SQL Server Management Studio (SSMS)</strong> como herramienta para ejecutar las consultas y explorar la información.</p>
+
+    <h4>Proceso seguido</h4>
+
+    <h3>1. Exploración de la Base de Datos</h3>
+    <p>El primer paso fue conocer la estructura de la base de datos, identificando las tablas y sus relaciones. Se analizaron tablas relacionadas con <strong>empleados, departamentos y turnos laborales</strong>, asegurando que la información obtenida fuera útil y estuviera bien organizada.</p>
+
+    <h5>2. Extracción de Información de Empleados</h5>
+    <p>Se diseñó una consulta SQL para extraer datos clave del personal, incluyendo:</p>
+    <ul>
+        <li><strong>Información personal:</strong> nombre, estado civil, género y fecha de nacimiento.</li>
+        <li><strong>Datos laborales:</strong> fecha de ingreso, antigüedad, periodo de pago y días disponibles para vacaciones.</li>
+        <li><strong>Cálculos dinámicos:</strong> edad de los empleados mediante <code>DATEDIFF()</code>.</li>
+        <li><strong>Unión de tablas:</strong> incorporación de detalles del departamento y turno asignado.</li>
+        <li><strong>Transformación de datos:</strong> uso de <code>CASE</code> para convertir códigos numéricos en información legible.</li>
+    </ul>
+
+    <h5>3. Consulta de Departamentos y Turnos</h5>
+    <p>Además de los datos de los empleados, se extrajo información estructurada sobre:</p>
+    <ul>
+        <li><strong>Departamentos:</strong> mostrando la organización interna de la empresa.</li>
+        <li><strong>Turnos de trabajo:</strong> horarios de inicio y fin de cada jornada.</li>
+    </ul>
+
+    <h5>4. Validación y Visualización de Resultados</h5>
+    <p>Se revisaron los resultados para garantizar que:</p>
+    <ul>
+        <li>La información se presentara de forma clara y comprensible.</li>
+        <li>Los cálculos fueran correctos.</li>
+        <li>Los datos extraídos fueran coherentes con la estructura de la base de datos.</li>
+    </ul>
+
+    <h4>Conclusión</h4>
+    <p>Este proceso permitió extraer y analizar información clave del personal utilizando SQL. Se aplicaron técnicas de <strong>unión de tablas, transformación de datos y cálculos dinámicos</strong>, facilitando una visión clara de la estructura organizacional y la gestión del talento. Este tipo de análisis es fundamental para optimizar la toma de decisiones en cualquier empresa.</p>
 
 
 
         <!-- Enlace al repositorio -->
-        <h2>Repositorio</h2>
+        <h4>Repositorio</h4>
         <p>Puedes acceder al código fuente en <a href="link_repositorio" target="_blank">GitHub</a>.</p>
 
         <a href="index.html" class="btn btn-dark">Volver al Portafolio</a> 
