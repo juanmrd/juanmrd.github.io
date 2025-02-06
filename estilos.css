@@ -36,7 +36,7 @@ header {
 /* Estilos para el texto de la navbar */
 .navbar-brand {
     color: white !important;
-    text-align: center !important;
+    text-align: center;
 }
 
 /* Estilo del navbar-toggler (botón de menú en dispositivos pequeños) */
