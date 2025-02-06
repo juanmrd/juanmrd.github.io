@@ -69,7 +69,7 @@ img {
 
 /* Modal de imagen */
 .modal-dialog {
-    max-width: 80%;
+    max-width: 90%; /* Aumentar el tamaño máximo del modal al 90% del ancho de la ventana */
     margin: auto;
 }
 
@@ -77,19 +77,16 @@ img {
     padding: 20px;
 }
 
+/* Establecer la imagen para que ocupe todo el ancho disponible */
 #modalImage {
-    width: 100%;
-    height: auto;
+    width: 100%; /* La imagen ocupará todo el ancho del modal */
+    height: auto; /* Mantener la relación de aspecto de la imagen */
+    max-width: 100%; /* Asegurarse de que no se desborde del contenedor */
 }
 
+/* Estilo del botón de cierre */
 .btn-close {
     background-color: transparent;
     border: none;
     font-size: 30px;
-}
-
-
-#modalImage {
-    width: 100%;
-    height: auto;
 }
