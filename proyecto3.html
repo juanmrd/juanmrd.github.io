@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Proyecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1>Detalles del Proyecto</h1>
+        
+        <!-- Gráfico de Power BI -->
+        <iframe title="Ventas" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiOTRkNWY3ZDQtNmJiMC00YTQ1LThmM2EtODIyYmFmMWRmZmM3IiwidCI6IjQzZGJjZGI3LWU1MzUtNDBhZS1hOGRlLTI4YTg1ZjJmYTZkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        <br>
+
+        <!-- Descripción detallada -->
+      <h3>Dashboard: Análisis de Ventas y Beneficios en Restaurantes</h3>
+
+<p>Este dashboard interactivo presenta un análisis detallado de las ventas y beneficios de un restaurante, permitiendo evaluar el rendimiento por canal de venta, día de la semana y producto.</p>
+
+<h4>Principales funcionalidades y valor agregado:</h4>
+<ul>
+    <li><strong>Comparación de Ventas vs. Beneficios:</strong> Un gráfico de líneas muestra el desempeño de cada canal de venta (Presencial, PedidosYa, UberEats, WhatsApp y Rappi), facilitando la identificación de los más rentables.</li>
+    <li><strong>Distribución de ventas por día:</strong> Se presentan los días con mayor volumen de ventas, permitiendo detectar patrones de consumo y optimizar estrategias de oferta y demanda.</li>
+    <li><strong>Análisis de ingresos diarios:</strong> Una tabla desglosa las ventas por día, ayudando a monitorear la evolución de ingresos en el mes.</li>
+    <li><strong>Ranking de productos:</strong> Se muestra la cantidad vendida y el porcentaje de beneficio de cada producto, destacando cuáles generan mayor rentabilidad.</li>
+    <li><strong>Indicadores clave:</strong> Métricas como la cantidad total de productos vendidos, el monto total de ventas, la utilidad bruta y el margen de ganancia proporcionan una visión clara del desempeño financiero.</li>
+</ul>
+
+<p>Este dashboard permite a los dueños de restaurantes y gerentes de ventas tomar decisiones estratégicas basadas en datos, optimizar su oferta de productos y maximizar la rentabilidad.</p>
+
+
+        <!-- Enlace al repositorio -->
+        <h4>Repositorio</h4>
+        <p>Puedes acceder al código fuente en <a href="link_repositorio" target="_blank">GitHub</a>.</p>
+
+        <a href="index.html" class="btn btn-dark">Volver al Portafolio</a> 
+    </div>
+
+    <!-- Modal para ver imágenes más grandes -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar la imagen en el modal -->
+    <script>
+        function setImageSrc(imageSrc) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
