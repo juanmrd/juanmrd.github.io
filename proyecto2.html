@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Proyecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1>Detalles del Proyecto</h1>
+        
+        <!-- Gráfico de Power BI -->
+        <iframe title="Proyecto RRHH" width="100%" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiOGJjOGQ3YTItOGIxNi00MTc5LTk0MGEtYzc0OWJjZjE0ZWE3IiwidCI6IjQzZGJjZGI3LWU1MzUtNDBhZS1hOGRlLTI4YTg1ZjJmYTZkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+        <br>
+
+        <!-- Descripción detallada -->
+        <h3>Extracción y Análisis de Datos con SQL</h3>
+
+    <p>Para este ejercicio, se trabajó con una base de datos pública utilizada comúnmente como referencia en análisis de datos y gestión empresarial. Se empleó <strong>SQL Server Management Studio (SSMS)</strong> como herramienta para ejecutar las consultas y explorar la información.</p>
+
+    <h4>Proceso seguido</h4>
+
+    <h5>1. Exploración de la Base de Datos</h5>
+    <p>El primer paso fue conocer la estructura de la base de datos, identificando las tablas y sus relaciones. Se analizaron tablas relacionadas con <strong>empleados, departamentos y turnos laborales</strong>, asegurando que la información obtenida fuera útil y estuviera bien organizada.</p>
+
+    <h5>2. Extracción de Información de Empleados</h5>
+    <p>Se diseñó una consulta SQL para extraer datos clave del personal, incluyendo:</p>
+    <ul>
+        <li><strong>Información personal:</strong> nombre, estado civil, género y fecha de nacimiento.</li>
+        <li><strong>Datos laborales:</strong> fecha de ingreso, antigüedad, periodo de pago y días disponibles para vacaciones.</li>
+        <li><strong>Cálculos dinámicos:</strong> edad de los empleados mediante <code>DATEDIFF()</code>.</li>
+        <li><strong>Unión de tablas:</strong> incorporación de detalles del departamento y turno asignado.</li>
+        <li><strong>Transformación de datos:</strong> uso de <code>CASE</code> para convertir códigos numéricos en información legible.</li>
+    </ul>
+
+    <h5>3. Consulta de Departamentos y Turnos</h5>
+    <p>Además de los datos de los empleados, se extrajo información estructurada sobre:</p>
+    <ul>
+        <li><strong>Departamentos:</strong> mostrando la organización interna de la empresa.</li>
+        <li><strong>Turnos de trabajo:</strong> horarios de inicio y fin de cada jornada.</li>
+    </ul>
+
+    <h5>4. Validación y Visualización de Resultados</h5>
+    <p>Se revisaron los resultados para garantizar que:</p>
+    <ul>
+        <li>La información se presentara de forma clara y comprensible.</li>
+        <li>Los cálculos fueran correctos.</li>
+        <li>Los datos extraídos fueran coherentes con la estructura de la base de datos.</li>
+    </ul>
+
+    <h4>Conclusión</h4>
+    <p>Este proceso permitió extraer y analizar información clave del personal utilizando SQL. Se aplicaron técnicas de <strong>unión de tablas, transformación de datos y cálculos dinámicos</strong>, facilitando una visión clara de la estructura organizacional y la gestión del talento. Este tipo de análisis es fundamental para optimizar la toma de decisiones en cualquier empresa.</p>
+
+
+
+        <!-- Enlace al repositorio -->
+        <h4>Repositorio</h4>
+        <p>Puedes acceder al código fuente en <a href="link_repositorio" target="_blank">GitHub</a>.</p>
+
+        <a href="index.html" class="btn btn-dark">Volver al Portafolio</a> 
+    </div>
+
+    <!-- Modal para ver imágenes más grandes -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar la imagen en el modal -->
+    <script>
+        function setImageSrc(imageSrc) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
