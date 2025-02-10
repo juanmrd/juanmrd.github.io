@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Proyecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1>Dashboard: Fuerza Laboral</h1>
+        
+        <!-- Gráfico de Power BI -->
+        <iframe title="Proyecto Universidad" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNDI2YzMxNjItNGUyYS00MThmLWFkNzQtMWNkMmYyNWRhOTU3IiwidCI6IjQzZGJjZGI3LWU1MzUtNDBhZS1hOGRlLTI4YTg1ZjJmYTZkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        <!-- Imágenes del proceso -->
+       <h1>Dashboard de Gestión Académica 📊🎓</h1>
+        <p>Este dashboard interactivo permite analizar información clave sobre docentes y alumnos, proporcionando una visión clara y estructurada para la toma de decisiones estratégicas en instituciones educativas.</p>
+        
+        <h2>📌 Módulo de Docentes</h2>
+        <ul>
+            <li><strong>Distribución Geográfica:</strong> Visualización en mapa de la ubicación de los docentes.</li>
+            <li><strong>Segmentación por Nivel Académico:</strong> Clasificación según estudios (Doctorado, Magíster, etc.).</li>
+            <li><strong>Categoría Docente:</strong> Diferenciación entre asociados, titulares, eméritos y otros.</li>
+            <li><strong>Resumen Estadístico:</strong> Número total de docentes y desglose por categorías.</li>
+        </ul>
+        
+        <h2>📌 Módulo de Alumnos</h2>
+        <ul>
+            <li><strong>Mapa de Ubicación:</strong> Representación geoespacial de los estudiantes matriculados.</li>
+            <li><strong>Segmentación por Becas:</strong> Diferenciación entre alumnos becados y no becados.</li>
+            <li><strong>Clasificación de Asignaturas:</strong> Separación entre cursos obligatorios y electivos.</li>
+            <li><strong>Desempeño Académico:</strong> Promedio de notas general y por asignatura.</li>
+        </ul>
+        
+        <h2>🚀 Valor y Aplicación</h2>
+        <p>Esta herramienta proporciona insights valiosos para optimizar la gestión educativa. Permite identificar patrones, evaluar el impacto de programas académicos y mejorar la planificación de recursos docentes y estudiantiles.</p>
+        <p><strong>Ideal para:</strong> Directivos, analistas de datos educativos y responsables de planificación académica.</p>
+        
+        <p><strong>Convierte los datos en decisiones estratégicas con este dashboard intuitivo y poderoso. 💡</strong></p>
+
+
+        <!-- Enlace al repositorio -->
+        <h4>Repositorio</h4>
+        <p>Puedes acceder al código fuente en <a href="link_repositorio" target="_blank">GitHub</a>.</p>
+
+        <a href="index.html" class="btn btn-dark">Volver al Portafolio</a> 
+    </div>
+
+    <!-- Modal para ver imágenes más grandes -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar la imagen en el modal -->
+    <script>
+        function setImageSrc(imageSrc) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
