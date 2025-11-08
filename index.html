@@ -4,171 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Juan Rincón</title>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Estilos opcionales -->
+    <style>
+        body {
+            padding-top: 70px; /* evita que el contenido se monte con la navbar */
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+        }
+
+        .card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        #projects h2,
+        #contact h2 {
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Cabecera con navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Juan Rincón</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-              <!--
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link m-3" href="#about">Sobre Mí</a></li>
-                        <li class="nav-item"><a class="nav-link m-3 href="#projects">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link m-3 href="#contact">Contacto</a></li> -->
-                    </ul>
-                </div>
+<!-- ✅ Navbar limpia y corregida -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Juan Rincón</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link m-2" href="#about-me">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link m-2" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link m-2" href="#contact">Contacto</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-   <section id="about-me" class="py-5">
-  <div class="container">
 
-    <header class="text-center mb-4">
-      <h2 class="text-primary fw-bold mb-2">Sobre mí</h2>
+<!-- ✅ SOBRE MÍ (corregido y limpio) -->
+<section id="about-me" class="py-5">
+    <div class="container">
 
-      <p class="fw-semibold text-secondary">
-        Gestión de Personas &nbsp;|&nbsp; Analítica y Business Intelligence &nbsp;|&nbsp; Optimización de Procesos
-      </p>
-    </header>
+        <header class="text-center mb-4">
+            <h2 class="text-primary fw-bold">Sobre mí</h2>
+            <p class="fw-semibold text-secondary">
+                Gestión de Personas • Analítica y Business Intelligence • Optimización de Procesos
+            </p>
+        </header>
 
-    <div class="mx-auto" style="max-width: 800px; font-size: 1.05rem; line-height: 1.7;">
-      <p>
-        Hola, soy <strong>Juan Rincón</strong>, profesional con más de 
-        <strong>15 años de experiencia</strong> en la optimización de procesos, análisis de información 
-        y apoyo a la toma de decisiones en sectores como educación, servicios y gestión de personas.
-      </p>
+        <div class="mx-auto" style="max-width: 800px; font-size: 1.08rem; line-height: 1.75;">
+            <p>
+                Hola, soy <strong>Juan Rincón</strong>, profesional con más de 
+                <strong>15 años de experiencia</strong> en la optimización de procesos, análisis de información 
+                y apoyo a la toma de decisiones en sectores como educación, servicios y gestión de personas.
+            </p>
 
-      <p>
-        Trabajo con tecnologías como <strong>SQL, Python, Power BI y Excel</strong>, desarrollando dashboards interactivos,
-        reportes automatizados y modelos analíticos que convierten los datos en información estratégica. 
-        Mi enfoque está en generar <strong>insights accionables</strong> que impulsen la eficiencia operativa, 
-        la digitalización de procesos y el uso inteligente de la información.
-      </p>
+            <p>
+                Trabajo con tecnologías como <strong>SQL, Python, Power BI y Excel</strong>, desarrollando dashboards interactivos,
+                reportes automatizados y modelos analíticos que convierten los datos en información estratégica. 
+                Mi enfoque está en generar <strong>insights accionables</strong> que impulsen la eficiencia operativa, 
+                la digitalización de procesos y el uso inteligente de la información.
+            </p>
 
-      <p>
-        Mi objetivo es seguir desarrollando <strong>soluciones de Business Intelligence y analítica avanzada</strong> 
-        que generen valor real, permitiendo a las empresas tomar decisiones basadas en datos con mayor precisión y oportunidad.
-      </p>
+            <p>
+                Mi objetivo es seguir desarrollando <strong>soluciones de Business Intelligence y analítica avanzada</strong> 
+                que generen valor real, permitiendo a las empresas tomar decisiones basadas en datos con mayor precisión y oportunidad.
+            </p>
+        </div>
+
     </div>
-
-  </div>
 </section>
 
 
-    </section>
+<!-- ✅ PROYECTOS -->
+<section id="projects" class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Proyectos</h2>
 
-    <!-- Sección Proyectos -->
-    <section id="projects" class="container mt-5">
-        <h2 class="text-center">Proyectos</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="universidad.PNG" class="card-img-top img-fluid" alt="Proyecto 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                        <h5 class="card-title">Visualización Gestión Académica.</h5>
-                        <!-- Este es un comentario en HTML -->
-                           <!-- <p class="card-text">Visualización Gestión Académica.</p> -->
-                        <a href="proyecto6.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="CapturaPantallahhrr.jpg" class="card-img-top img-fluid" alt="Proyecto 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                        <h5 class="card-title">Visualización fuerza laboral.</h5>
-                        <!-- <p class="card-text">Visualización fuerza laboral.</p>  -->
-                        <a href="proyecto1.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-             
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="dasboardventas.JPG" class="card-img-top img-fluid" alt="Proyecto 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                        <h5 class="card-title">Visualización de ventas.</h5>
-                        <!-- <p class="card-text">Visualización de ventas.</p> -->
-                        <a href="proyecto2.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-               <div class="col-md-4">
-                    <div class="card">
-                    <img src="capturafood.JPG" class="card-img-top img-fluid" alt="Proyecto 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                         <h5 class="card-title">Visualización ventas Restaurant.</h5> 
-                       <!-- <p class="card-text">Visualización ventas Restaurant.</p> -->
-                        <a href="proyecto3.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-               <div class="col-md-4">
-                    <div class="card">
-                    <img src="extraerboletas.PNG" class="card-img-top img-fluid" alt="Proyecto 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                        <h5 class="card-title">Extraer información de boletas.</h5>
-                         <!-- <p class="card-text">Extraer información de boletas.</p> -->
-                        <a href="proyecto4.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-                <div class="col-md-4">
-                    <div class="card">
-                    <img src="incidencias.PNG" class="card-img-top img-fluid" alt="Proyecto 6" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
-                    <div class="card-body">
-                        <h5 class="card-title">Análisis y procesamiento de datos de incidencias docentes.</h5>
-                       <!-- <p class="card-text">Análisis y procesamiento de datos de incidencias docentes.</p> -->
-                        <a href="proyecto5.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
+    <div class="row g-4">
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="universidad.PNG" class="card-img-top img-fluid" alt="Visualización Gestión Académica" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Visualización Gestión Académica</h5>
+                    <a href="proyecto6.html" class="btn btn-primary">Ver detalles</a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Sección Contacto -->
-    <section id="contact" class="container mt-5 text-center">
-        <h2>Contacto</h2>
-        <p>Puedes encontrarme en:</p>
-        <a href="https://www.linkedin.com/in/juan-m-rincon-d" class="btn btn-primary">LinkedIn</a>
-        <a href="https://github.com/juanmrd" class="btn btn-dark">GitHub</a>
-    </section>
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="CapturaPantallahhrr.jpg" class="card-img-top img-fluid" alt="Fuerza laboral" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Visualización fuerza laboral</h5>
+                    <a href="proyecto1.html" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
 
-    <!-- Modal de imagen -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="dasboardventas.JPG" class="card-img-top img-fluid" alt="Ventas" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Visualización de ventas</h5>
+                    <a href="proyecto2.html" class="btn btn-primary">Ver detalles</a>
                 </div>
-                <div class="modal-body">
-                    <img src="" id="modalImage" class="img-fluid" alt="Imagen ampliada">
+            </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="capturafood.JPG" class="card-img-top img-fluid" alt="Restaurant" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Ventas Restaurant</h5>
+                    <a href="proyecto3.html" class="btn btn-primary">Ver detalles</a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="extraerboletas.PNG" class="card-img-top img-fluid" alt="Boletas" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Extracción de boletas</h5>
+                    <a href="proyecto4.html" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="incidencias.PNG" class="card-img-top img-fluid" alt="Incidencias docentes" onclick="openModal(this)">
+                <div class="card-body">
+                    <h5 class="card-title">Análisis de incidencias docentes</h5>
+                    <a href="proyecto5.html" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ✅ CONTACTO -->
+<section id="contact" class="container text-center py-5">
+    <h2 class="fw-bold mb-3">Contacto</h2>
+    <p>Puedes encontrarme en:</p>
+
+    <a href="https://www.linkedin.com/in/juan-m-rincon-d" class="btn btn-primary m-1">LinkedIn</a>
+    <a href="https://github.com/juanmrd" class="btn btn-dark m-1">GitHub</a>
+</section>
+
+
+<!-- ✅ MODAL IMAGEN -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="" id="modalImage" class="img-fluid w-100" alt="Imagen ampliada">
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Función para abrir el modal con la imagen
-        function openModal(img) {
-            var modalImage = document.getElementById('modalImage');
-            modalImage.src = img.src;  // Asigna la imagen al modal
-        }
-    </script>
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function openModal(img) {
+        document.getElementById('modalImage').src = img.src;
+    }
+</script>
+
 </body>
 </html>
+
 
 
