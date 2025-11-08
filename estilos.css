@@ -1,98 +1,126 @@
-/* Reseteo de márgenes y padding para todo el documento */
+/* =============================
+   RESET GENERAL
+============================= */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;  /* Evitar desplazamiento horizontal */
-    box-sizing: border-box;  /* Asegurarnos de que todo se ajuste dentro del contenedor */
+    overflow-x: hidden;
 }
 
-/* Asegurarnos de que los bordes no afecten el tamaño de los elementos */
 * {
-    box-sizing: inherit;  /* Todo elemento dentro hereda el box-sizing de 'body' */
+    box-sizing: border-box;
 }
 
-/* Estilos para el header */
-header {
-    background-color: #343a40 !important;  /* Fondo oscuro */
-}
 
-/* Estilos de la barra de navegación */
+/* =============================
+   NAVBAR
+============================= */
 .navbar {
-    margin: 0 !important;  /* Elimina margen */
-    padding: 0 !important;  /* Elimina relleno */
-    background-color: #343a40 !important;  /* Fondo oscuro */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    width: 100%;
-    height: 60px;  /* Ajusta la altura de la barra de navegación */
-    display: flex;  /* Usamos Flexbox para alinear los elementos */
-    /*justify-content: center;  /* Centra los elementos dentro de la navbar */
-    /*align-items: center;  /* Alinea verticalmente los elementos */
+    background-color: #343a40 !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1rem !important;
 }
 
-/* Eliminar márgenes y rellenos dentro de la navbar */
-.navbar * {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Estilos para el texto de la navbar */
 .navbar-brand {
-    color: white !important;
-    text-align: center;  /* Centra el texto */
-    width: 100%;  /* Asegura que el ancho ocupe todo el espacio disponible */
-    letter-spacing: 2px;
-    line-height: 1.5;  /* Ajusta el espacio entre las líneas (si hay más de una línea de texto) */
-}
-/* Aumentar el espacio entre los elementos de la navbar */
-.navbar-nav .nav-item {
-    margin-right: 15px;  /* Añade espacio entre cada item */
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-/* Estilo del navbar-toggler (botón de menú en dispositivos pequeños) */
-.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);  /* Borde gris claro */
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    padding: 0.5rem 0.8rem !important;
+    transition: color .2s ease;
 }
 
-/* Estilo para el contenedor principal */
-.container {
-    max-width: 1000px; /* Cambié el tamaño del contenedor */
-    margin: auto;
-    padding: 20px;
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/* =============================
+   CONTENEDORES GENERALES
+============================= */
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+/* =============================
+   SOBRE MÍ
+============================= */
+#about-me {
+    padding-top: 70px; /* evita el choque con navbar fija */
+}
+
+#about-me p {
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+
+/* =============================
+   CARDS DE PROYECTOS
+============================= */
+.card {
+    border: none;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background: transparent;  /* Cambio el fondo blanco a transparente */
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
-/* Estilos de las imágenes */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* =============================
+   IMÁGENES
+============================= */
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 10px auto;
-    cursor: pointer;  /* Aparece como un puntero para las imágenes */
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-/* Modal de imagen */
+
+/* =============================
+   MODAL DE IMAGEN
+============================= */
 .modal-dialog {
-    max-width: 90%; /* Aumentar el tamaño máximo del modal al 90% del ancho de la ventana */
-    margin: auto;
+    max-width: 90%;
 }
 
 .modal-content {
-    padding: 20px;
+    padding: 0;
+    border-radius: 10px;
 }
 
-/* Establecer la imagen para que ocupe todo el ancho disponible */
 #modalImage {
-    width: 100%; /* La imagen ocupará todo el ancho del modal */
-    height: auto; /* Mantener la relación de aspecto de la imagen */
-    max-width: 100%; /* Asegurarse de que no se desborde del contenedor */
+    width: 100%;
+    height: auto;
 }
 
-/* Estilo del botón de cierre */
+
+/* =============================
+   BOTÓN DE CIERRE DEL MODAL
+============================= */
 .btn-close {
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1;
 }
